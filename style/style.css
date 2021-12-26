@@ -1,0 +1,312 @@
+/* PT Sans */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2"),
+    url("../fonts/ptsans-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2"),
+    url("../fonts/ptsans-700.woff") format("woff");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  background-color: #fbf7f4;
+  background-image: url("../images/noisy-texture.png");
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button--feedback {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.button--light {
+  color: #242424;
+  background-color: #ffffff;
+}
+
+/* Шапка */
+.page-header {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Навигация */
+.navigation__link {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-index {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/index-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* Преимущества */
+.advantages__list {
+  text-align: center;
+}
+
+.advantages__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+/* Index-columns */
+.index-columns {
+  color: #242424;
+  background-color: #fbf7f4;
+  background-image: url("../images/noisy-texture.png");
+}
+
+/* Популярные услуги */
+.services {
+  text-transform: uppercase;
+}
+
+.services__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.services__list {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.services__price {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #af7842;
+}
+
+/* Галлерея */
+.gallery__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+/* Контакты */
+.contacts {
+  font-weight: 700;
+}
+
+.contacts__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.contacts__subtitle {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #af7842;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__address-text {
+  font-family: "PT Sans", sans-serif;
+}
+
+.contacts__phone {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #242424;
+}
+
+/* Форма записи */
+.appointment__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.appointment__text {
+  color: #595959;
+}
+
+.appointment__form-label-text {
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Футер */
+.page-footer {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #242424;
+  background-image: url("../images/noisy-texture.png");
+}
+
+.footer-contacts__address-text {
+  line-height: 22px;
+}
+
+.footer-contacts__phone {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: inherit;
+}
+
+.footer-contacts__link {
+  font-size: 20px;
+  line-height: 26px;
+  color: inherit;
+}
+
+.newsletter-form__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.footer-social__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  line-height: 20px;
+}
+
+.html-academy-link {
+  color: #dbb590;
+}
+
+/* Внутренние страницы */
+.inner-header__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+/* Каталог */
+/* Хлебные крошки */
+.breadcrumbs__link {
+  line-height: 22px;
+  color: inherit;
+}
+
+.breadcrumbs__link--current {
+  color: #595959;
+}
+
+/* Каталог-фильтр */
+.catalog-filter__title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.control__label {
+  font-weight: 700;
+  line-height: 22px;
+}
+
+/* Sorting */
+.sorting-container {
+  color: #242424;
+  background-color: #ffffff;
+}
+
+/* Карточки товара */
+.product-list__item {
+  background-color: #ffffff;
+}
+
+.product-list__link {
+  text-decoration: none;
+}
+
+.product-list__title {
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-list__price {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #814b18;
+}
+
+/* Пагинация */
+.pagination {
+  background-color: #ffffff;
+}
+
+.pagination__link {
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+}
+
+.pagination__link--current {
+  color: #242424;
+  background-color: #ffffff;
+}
+
+.pagination__link--disabled {
+  color: #ffffff;
+  background-color: #595959;
+}
