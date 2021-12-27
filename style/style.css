@@ -18,13 +18,21 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
   background-color: #fbf7f4;
-  background-image: url("../images/noisy-texture.png");
+  background-image: url("/images/noisy-texture.png");
 }
 
 .button {
@@ -56,6 +64,30 @@ body {
 }
 
 /* Навигация */
+.navigation {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.navigation__logo {
+  width: 140px;
+  margin-right: 100px;
+}
+
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  width: 430px;
+  list-style-type: none;
+}
+
+.navigation__list--user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
 .navigation__link {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
@@ -66,7 +98,12 @@ body {
   text-decoration: none;
 }
 
-.main-index {
+/* Main */
+.main-container {
+  flex-grow: 1;
+}
+
+.main--index {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/index-bg.jpg");
@@ -74,9 +111,30 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Page-container */
+.page-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* Логотип */
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Преимущества */
 .advantages__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   text-align: center;
+}
+
+.advantages__item {
+  width: 277px;
 }
 
 .advantages__title {
@@ -88,6 +146,9 @@ body {
 
 /* Index-columns */
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("../images/noisy-texture.png");
@@ -95,6 +156,7 @@ body {
 
 /* Популярные услуги */
 .services {
+  width: 390px;
   text-transform: uppercase;
 }
 
@@ -116,6 +178,10 @@ body {
 }
 
 /* Галлерея */
+.gallery {
+  width: 390px;
+}
+
 .gallery__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
@@ -125,6 +191,7 @@ body {
 
 /* Контакты */
 .contacts {
+  width: 350px;
   font-weight: 700;
 }
 
@@ -159,6 +226,10 @@ body {
 }
 
 /* Форма записи */
+.appointment {
+  width: 430px;
+}
+
 .appointment__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
@@ -185,6 +256,17 @@ body {
   background-image: url("../images/noisy-texture.png");
 }
 
+.page-footer__container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  width: 200px;
+  margin-right: 130px;
+}
+
 .footer-contacts__address-text {
   line-height: 22px;
 }
@@ -202,11 +284,20 @@ body {
   color: inherit;
 }
 
+.newsletter-form {
+  width: 277px;
+}
+
 .newsletter-form__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.footer-social {
+  max-width: 190px;
+  margin-left: auto;
 }
 
 .footer-social__title {
@@ -243,7 +334,18 @@ body {
   color: #595959;
 }
 
+/* catalog-products */
+
+.catalog-products {
+  display: flex;
+}
+
 /* Каталог-фильтр */
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
+}
+
 .catalog-filter__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
@@ -256,6 +358,13 @@ body {
 .control__label {
   font-weight: 700;
   line-height: 22px;
+}
+
+/*  catalog-right-column*/
+.catalog-right-column {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 
 /* Sorting */
