@@ -47,7 +47,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="main-container main--inner">
     <div class="page-container">
       <header class="inner-header">
         <h1 class="inner-header__title">Каталог</h1>
@@ -223,22 +223,35 @@
                 <a class="button" href="#">Купить</a>
             </li>
           </ul>
-          <ul class="pagination">
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--prev pagination__link--disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-              <a class="pagination__link pagination__link--current">1</a>
-              <a class="pagination__link" href="#">2</a>
-              <a class="pagination__link" href="#">3</a>
-              <a class="pagination__link" href="#">4</a>
-              <a class="pagination__link" href="#">5</a>
-              <a class="pagination__link pagination__link--next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
-          <button class="button">Показать ещё</button>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--prev pagination__link--disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">5</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+
+                </a>
+              </li>
+            </ul>
+            <button class="button">Показать ещё</button>
+          </div>
         </div>
       </section>
     </div>

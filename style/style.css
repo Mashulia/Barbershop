@@ -20,6 +20,13 @@
 
 html {
   height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
@@ -33,6 +40,17 @@ body {
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("/images/noisy-texture.png");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .button {
@@ -71,12 +89,17 @@ body {
 }
 
 .navigation__logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 27px;
   width: 140px;
   margin-right: 100px;
 }
 
 
 .navigation__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 430px;
@@ -89,6 +112,8 @@ body {
 }
 
 .navigation__link {
+  display: block;
+  padding: 24px 20px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
   line-height: 22px;
@@ -98,17 +123,29 @@ body {
   text-decoration: none;
 }
 
+.navigation__list--user .navigation__link {
+  min-width: 16px;
+  min-height: 22px;
+}
+
 /* Main */
 .main-container {
   flex-grow: 1;
 }
 
 .main--index {
+  padding-top: 64px;
+  padding-bottom: 61px;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/index-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main--inner {
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 /* Page-container */
@@ -121,9 +158,14 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
+  margin-bottom: 64px;
 }
 
 /* Преимущества */
+.advantages {
+  margin-bottom: 58px;
+}
+
 .advantages__list {
   display: flex;
   justify-content: space-between;
@@ -138,6 +180,8 @@ body {
 }
 
 .advantages__title {
+  margin-top: 0;
+  margin-bottom: 56px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -148,10 +192,19 @@ body {
 .index-columns {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 31px;
   padding: 40px;
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("../images/noisy-texture.png");
+}
+
+.index-columns:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__description {
+  margin: 0;
 }
 
 /* Популярные услуги */
@@ -161,6 +214,8 @@ body {
 }
 
 .services__title {
+  margin-top: 0;
+  margin-bottom: 28px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -170,6 +225,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
+  list-style-type: none;
 }
 
 .services__price {
@@ -183,6 +239,8 @@ body {
 }
 
 .gallery__title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -196,6 +254,8 @@ body {
 }
 
 .contacts__title {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -203,6 +263,8 @@ body {
 }
 
 .contacts__subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -231,6 +293,8 @@ body {
 }
 
 .appointment__title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -249,6 +313,7 @@ body {
 
 /* Футер */
 .page-footer {
+  padding: 40px 0;
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
@@ -289,6 +354,8 @@ body {
 }
 
 .newsletter-form__title {
+  margin-top: 0;
+  margin-bottom: 14px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -300,7 +367,29 @@ body {
   margin-left: auto;
 }
 
+.footer-social__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social__item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  width: 56px;
+  height: 44px;
+  background-color: #000000;
+}
+
+.footer-social__item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .footer-social__title {
+  margin-top: 0;
+  margin-bottom: 14px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -317,6 +406,8 @@ body {
 
 /* Внутренние страницы */
 .inner-header__title {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
@@ -325,7 +416,15 @@ body {
 
 /* Каталог */
 /* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .breadcrumbs__link {
+  margin-right: 32px;
   line-height: 22px;
   color: inherit;
 }
@@ -369,11 +468,29 @@ body {
 
 /* Sorting */
 .sorting-container {
+  display: flex;
+  margin-bottom: 16px;
+  padding: 16px;
   color: #242424;
   background-color: #ffffff;
 }
 
+.sorting-type {
+  margin-right: auto;
+}
+
+.sorting-container .button {
+  width: 56px;
+  height: 44px;
+}
+
 /* Карточки товара */
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .product-list__item {
   background-color: #ffffff;
 }
@@ -397,11 +514,29 @@ body {
 }
 
 /* Пагинация */
-.pagination {
+.pagination-container {
+  display: flex;
+  padding: 16px;
   background-color: #ffffff;
 }
 
+.pagination {
+  display: flex;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination__link {
+  display: block;
+  width: 50px;
+  height: 44px;
+  padding: 14px 20px;
   font-weight: 700;
   line-height: 16px;
   text-align: center;
