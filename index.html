@@ -2,14 +2,14 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Барбершоп "Бородинский</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 
 <body>
@@ -46,28 +46,29 @@
   <main class="main-container main--index">
     <div class="page-container">
       <h1 class="visually-hidden">Барбершоп "Бородинский</h1>
-      <img class="logo" src="images/logo-full.svg" width="367" height="152" alt="Логотип Барбершопа 'Бородинский'.">
+      <img class="logo" src="images/logo-full.svg" width="367" height="152" alt="Логотип Барбершопа 'Бородинский'." />
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Быстро</h3>
             <p class="advantages__description">
-              Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы — счастливый обладатель стильной
-              стрижки-минутки!
+              Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы
+              — счастливый обладатель стильной стрижки-минутки!
             </p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Круто</h3>
             <p class="advantages__description">
-              Забудьте, как вы стриглись раньше.Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+              Забудьте, как вы стриглись раньше.Мы сделаем из вас звезду
+              футбола или кино! Во всяком случае внешне.
             </p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Дорого</h3>
             <p class="advantages__description">
-              Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не даёт
-              определённый статус?
+              Наши мастера — профессионалы своего дела и не могут стоить
+              дешево. к тому же, разве цена не даёт определённый статус?
             </p>
           </li>
         </ul>
@@ -97,7 +98,7 @@
         </section>
         <section class="gallery">
           <h2 class="gallery__title">Фотогалерея</h2>
-          <img class="slider__image" src="images/gallery-1.jpg" width="390" height="250" alt="Примеры работ.">
+          <img class="slider__image" src="images/gallery-1.jpg" width="390" height="250" alt="Примеры работ." />
           <button class="slider__button slider__button-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
@@ -106,7 +107,9 @@
           </button>
           <ol class="slider__pagination">
             <li class="slider__pagination-item">
-              <button class="slider__pagination-button slider__pagination-button--current" type="button">
+              <button class="
+                    slider__pagination-button slider__pagination-button--current
+                  " type="button">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
@@ -128,7 +131,9 @@
           <h2 class="contacts__title">Контакты</h2>
           <h3 class="contacts__subtitle">Барбершоп «Бородинский»</h3>
           <address class="contacts__address">
-            <p class="contacts__address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="contacts__address-text">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
             <a class="contacts__phone" href="tel:88005558628">+7 800 555-86-28</a>
           </address>
           <h3 class="contacts__subtitle">Время работы</h3>
@@ -144,41 +149,44 @@
         <section class="appointment">
           <h2 class="appointment__title">Записаться</h2>
           <p class="appointment__text">
-            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.
+            Укажите желаемую дату и время и мы свяжемся с вами для
+            подтверждения брони.
           </p>
           <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="appointment__form-field">
+            <p class="field-group appointment__form-date">
               <span class="appointment__form-label">
                 <label class="appointment__form-label-text" for="appointment-date">Дата</label>
                 <button class="appointment__form-label-icon info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input class="field" id="appointment-date" name="appointment-date" type="text" placeholder="01.01.2020">
+              <input class="field" id="appointment-date" name="appointment-date" type="text" placeholder="01.01.2020" />
             </p>
-            <p class="appointment__form-field">
+            <p class="field-group appointment__form-time">
               <span class="appointment__form-label">
                 <label class="appointment__form-label-text" for="appointment-time">Время</label>
                 <button class="appointment__form-label-icon info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input class="field" id="appointment-time" name="appointment-time" type="text" placeholder="10:10">
+              <input class="field" id="appointment-time" name="appointment-time" type="text" placeholder="10:10" />
             </p>
-            <p class="appointment__form-field">
+            <p class="field-group appointment__form-phone">
               <span class="appointment__form-label">
                 <label class="appointment__form-label-text" for="appointment-phone">Телефон</label>
               </span>
               <input class="field" id="appointment-phone" name="appointment-phone" type="tel"
-                placeholder="+7 800 000-00-00">
+                placeholder="+7 800 000-00-00" />
             </p>
-            <p class="appointment__form-field">
+            <p class="field-group appointment__form-name">
               <span class="appointment__form-label">
                 <label class="appointment__form-label-text" for="appointment-name">Ваше имя</label>
               </span>
-              <input class="field" id="appointment-name" name="appointment-name" type="text">
+              <input class="field" id="appointment-name" name="appointment-name" type="text" />
             </p>
-            <button class="button" type="submit">Записаться</button>
+            <button class="button appointment__form-submit" type="submit">
+              Записаться
+            </button>
           </form>
         </section>
       </div>
@@ -189,9 +197,11 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <img class="footer-contacts__logo" src="images/logo-short-footer.svg" width="187" height="24"
-          alt="Логотип Барбершопа 'Бородинский'.">
+          alt="Логотип Барбершопа 'Бородинский'." />
         <address class="contacts__address">
-          <p class="footer-contacts__address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-contacts__address-text">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </p>
           <a class="footer-contacts__phone" href="tel:88005558628">+7 800 555-86-28</a>
         </address>
         <a class="footer-contacts__link"
@@ -204,7 +214,7 @@
           <p class="newsletter-form__email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" id="newsletter-email" name="newsletter-email" type="email"
-              placeholder="question@htmlacademy.ru" required>
+              placeholder="question@htmlacademy.ru" required />
           </p>
           <button class="button newsletter-form__button">
             <span class="visually-hidden">Отправить</span>
@@ -230,7 +240,9 @@
             </a>
           </li>
         </ul>
-        <p class="about-text">Сделано в <a class="html-academy-link" href="https://htmlacademy.ru/">.html academy</a>
+        <p class="about-text">
+          Сделано в
+          <a class="html-academy-link" href="https://htmlacademy.ru/">.html academy</a>
         </p>
       </section>
     </div>
