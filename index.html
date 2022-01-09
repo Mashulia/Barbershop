@@ -8,7 +8,7 @@
   <title>Барбершоп "Бородинский</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style/style.css" />
 </head>
 
@@ -46,6 +46,39 @@
             </svg>
             <span class="visually-hidden">Корзина</span>
           </a>
+          <div class="popover popover--cart">
+            <button class="popover__close-button button button--light" type="button">
+              2
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div class="popover__content">
+              <h2 class="popover__title">Корзина</h2>
+              <ul class="cart-items__list">
+                <li class="cart-item">
+                  <p class="cart-item__title">Стрижка машинкой</p>
+                  <p class="cart-item__price">800 ₽</p>
+                  <button class="cart-item__button button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="m3.42 1 .283-.496L3.991 0H12.01l.288.504.284.496h3.048l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.372 1H3.42Zm.543 13L2.63 3h10.743l-1.335 11H3.963Zm5.04-9.071-.5 7 1.995.142.5-7-1.995-.142Zm-3.5 7.142-.5-7 1.995-.142.5 7-1.995.142Z"
+                        fill="#fff" /></svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <p class="cart-item__title">Стрижка усов</p>
+                  <p class="cart-item__price">1200 ₽</p>
+                  <button class="cart-item__button button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="m3.42 1 .283-.496L3.991 0H12.01l.288.504.284.496h3.048l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.372 1H3.42Zm.543 13L2.63 3h10.743l-1.335 11H3.963Zm5.04-9.071-.5 7 1.995.142.5-7-1.995-.142Zm-3.5 7.142-.5-7 1.995-.142.5 7-1.995.142Z"
+                        fill="#fff" /></svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="navigatioin__item">
           <a class="navigation__link navigation__link--login" href="#">
@@ -113,32 +146,44 @@
         </section>
         <section class="gallery">
           <h2 class="gallery__title">Фотогалерея</h2>
-          <img class="slider__image" src="images/gallery-1.jpg" width="390" height="250" alt="Примеры работ." />
-          <button class="slider__button slider__button-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider__button slider__button-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-          <ol class="slider__pagination">
-            <li class="slider__pagination-item">
-              <button class="
-                    slider__pagination-button slider__pagination-button--current
-                  " type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <img class="slider__image" src="images/gallery-1.jpg" width="390" height="250" alt="Примеры работ." />
+              <div class="slider-controls">
+                <button class="slider__button slider__button-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+
+                <button class="slider__button slider__button-next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                </button>
+              </div>
+              <ol class="slider__pagination">
+                <li class="slider__pagination-item">
+                  <button class="
+                        slider__pagination-button slider__pagination-button--current
+                      " type="button">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button class="slider__pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button class="slider__pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button class="slider__pagination-button" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+          </div>
         </section>
       </div>
       <div class="index-columns">
@@ -264,6 +309,37 @@
       </section>
     </div>
   </footer>
+  <div class="modal-container modal--close">
+    <div class="modal modal--auth">
+      <button class="modal__close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-content__title">Личный кабинет</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="field__group">
+            <label class="visually-hidden" for="auth-login">Логин</label>
+            <input class="auth-form__field field" id="auth-login" name="auth-login" type="text" placeholder="Логин">
+          </p>
+          <p class="field__group">
+            <label class="visually-hidden" for="auth-password">Пароль</label>
+            <input class="auth-form__field field" id="auth-password" name="auth-password" type="password"
+              placeholder="Пароль">
+          </p>
+          <p class="field__group auth-form__user-options">
+            <label class="auth-form__checkbox control"">
+            <input class=" visually-hidden control__input" name="firm-store" type="checkbox" checked>
+              <span class="control__mark"></span>
+              <span class="control__label">Запомнить меня</span>
+            </label>
+            <a class="auth-form__recovery" href="#">Забыл пароль</a>
+          </p>
+          <button class="button auth-form__button" tupe="submit">Войти</button>
+          <a class="button auth-form__register" href="#">Регистрация</a>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
